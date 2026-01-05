@@ -199,7 +199,7 @@ Create a virtual environment and install dependencies:
 python -m venv venv
 source venv/bin/activate      # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
+```
 ### 2. Model Setup
 
 Download the spaCy English model used for Medical NER:
