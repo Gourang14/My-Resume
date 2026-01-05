@@ -75,6 +75,11 @@ This strict separation ensures clinical readability and avoids unsafe inference.
 **Q: How would you train an NLP model to map medical transcripts into SOAP format?**  
 **A:** This problem can be modeled as a **sequence-to-sequence task**. Architectures such as **LED (Long Encoder–Decoder)** are well-suited for long clinical conversations and could be fine-tuned on paired transcript–SOAP datasets (e.g., MT-SOAP), subject to clinical validation.
 
+**Q: What rule-based or deep-learning techniques would improve the accuracy of SOAP note generation?**  
+**A:** A hybrid strategy is most effective.  
+- **Rule-based techniques** such as speaker attribution (Patient vs. Physician), section-specific keyword rules, and negation detection help ensure correct placement of information into Subjective, Objective, Assessment, and Plan sections while maintaining clinical safety.  
+- **Deep-learning techniques** could include fine-tuned sequence-to-sequence models that learn section boundaries implicitly, as well as attention mechanisms to associate symptoms with diagnoses or treatments. In practice, combining rule-based safeguards with learned models provides better accuracy and explainability than using either approach alone.
+
 ---
 
 ## Project Structure
