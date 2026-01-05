@@ -25,7 +25,7 @@ The NER pipeline follows a **hybrid architecture** using `spaCy (en_core_web_sm)
   All extracted entities are returned **verbatim from the transcript**. The system intentionally avoids semantic normalization or reinterpretation (e.g., converting “hit my head” into “head impact”) to preserve original clinical context.
 
 - **Negation Handling:**  
-  A heuristic negation window checks for cues such as *“no”*, *“denies”*, or *“without”* to ensure that mentioned but absent symptoms are not falsely reported.
+  A heuristic negation window checks for cues such as *“no”*, *“denies”* or *“without”* to ensure that mentioned but absent symptoms are not falsely reported.
 
 ---
 
@@ -97,7 +97,7 @@ This project is an AI-driven medical documentation system designed to transform 
 
 ---
 
-## 🛠️ Technical Design & Philosophy
+## Technical Design & Philosophy
 
 ### 1. Medical NER (Information Extraction)
 The NER pipeline follows a **hybrid architecture** using `spaCy (en_core_web_sm)` and an `EntityRuler`.
