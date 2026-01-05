@@ -103,9 +103,8 @@ Gourang_Agarwal_Emitrr_Assignment/
 │   └── soap_generator.py
 ├── README.md
 └── requirements.txt
-'''
 ---
-
+```text
 ## Setup & Execution
 
 ### 1. Environment Setup
