@@ -206,14 +206,14 @@ Download the spaCy English model used for Medical NER:
 
 ```bash
 python -m spacy download en_core_web_sm
-
+```
 ### 3. Run the Pipeline
 
 Open and execute all cells in the demo notebook:
 
 ```text
 notebook/demo.ipynb
-
+```
 ### This will:
 - Load the transcript
 - Run preprocessing
