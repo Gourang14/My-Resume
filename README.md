@@ -104,6 +104,8 @@ Gourang_Agarwal_Emitrr_Assignment/
 ├── README.md
 └── requirements.txt
 
+---
+
 ## Setup & Execution
 
 ### 1. Environment Setup
