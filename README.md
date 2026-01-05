@@ -8,7 +8,7 @@ This project is an AI-driven medical documentation system designed to transform 
 ## Key Features
 - **Hybrid Medical NER:** Combines spaCy’s statistical model with generalized rule-based patterns for robust and recall-aware entity extraction.
 - **Transformer-based Sentiment Analysis:** Uses zero-shot classification to detect patient sentiment and intent without task-specific fine-tuning.
-- **Modular SOAP Generation:** Converts extracted information into a structured Subjective–Objective–Assessment–Plan format.
+- **Modular SOAP Generation:** Converts extracted information into a structured Subjective Objective Assessment Plan format.
 - **Safety-First Design:** Enforces negation detection and verbatim extraction to prevent hallucinations or unsafe medical inference.
 
 ---
