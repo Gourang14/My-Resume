@@ -32,7 +32,7 @@ The NER pipeline follows a **hybrid architecture** using `spaCy (en_core_web_sm)
 ### 2. Sentiment & Intent Analysis
 Patient sentiment and intent are analyzed using **zero-shot classification** with the `valhalla/distilbart-mnli-12-1` transformer model.
 
-- This approach enables detection of nuanced emotional states such as **Anxious**, **Neutral**, or **Reassured**, as well as intents like **Seeking Reassurance** or **Reporting Symptoms**, without requiring domain-specific labeled data.
+- This approach enables detection of nuanced emotional states such as **Anxious**, **Neutral** or **Reassured**, as well as intents like **Seeking Reassurance** or **Reporting Symptoms**, without requiring domain-specific labeled data.
 
 ---
 
@@ -73,7 +73,7 @@ This strict separation ensures clinical readability and avoids unsafe inference.
 ### III. SOAP Note Generation (Bonus)
 
 **Q: How would you train an NLP model to map medical transcripts into SOAP format?**  
-**A:** This problem can be modeled as a **sequence-to-sequence task**. Architectures such as **LED (Long Encoder–Decoder)** are well-suited for long clinical conversations and could be fine-tuned on paired transcript–SOAP datasets (e.g., MT-SOAP), subject to clinical validation.
+**A:** This problem can be modeled as a **sequence-to-sequence task**. Architectures such as **LED (Long Encoder–Decoder)** are well-suited for long clinical conversations and could be fine-tuned on paired transcript-SOAP datasets (e.g., MT-SOAP), subject to clinical validation.
 
 **Q: What rule-based or deep-learning techniques would improve the accuracy of SOAP note generation?**  
 **A:** A hybrid strategy is most effective.  
