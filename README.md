@@ -13,7 +13,7 @@ This project is an AI-driven medical documentation system designed to transform 
 
 ---
 
-## 🛠️ Technical Design & Philosophy
+## Technical Design & Philosophy
 
 ### 1. Medical NER (Information Extraction)
 The NER pipeline follows a **hybrid architecture** using `spaCy (en_core_web_sm)` and an `EntityRuler`.
@@ -161,7 +161,7 @@ This strict separation ensures clinical readability and avoids unsafe inference.
 
 **Q: What rule-based or deep-learning techniques would improve the accuracy of SOAP note generation?**  
 **A:** A hybrid strategy is most effective.  
-- **Rule-based techniques** such as speaker attribution (Patient vs. Physician), section-specific keyword rules, and negation detection help ensure correct placement of information into Subjective, Objective, Assessment, and Plan sections while maintaining clinical safety.  
+- **Rule-based techniques** such as speaker attribution (Patient vs. Physician), section-specific keyword rules, and negation detection help ensure correct placement of information into Subjective, Objective, Assessment and Plan sections while maintaining clinical safety.  
 - **Deep-learning techniques** could include fine-tuned sequence-to-sequence models that learn section boundaries implicitly, as well as attention mechanisms to associate symptoms with diagnoses or treatments. In practice, combining rule-based safeguards with learned models provides better accuracy and explainability than using either approach alone.
 
 ---
@@ -228,9 +228,9 @@ notebook/demo.ipynb
 
 After execution, the following files are created in the `outputs/` directory:
 
-- **medical_summary.json** — Structured medical summary extracted from the transcript  
-- **sentiment_intent.json** — Patient sentiment and intent analysis  
-- **soap_note.json** — Automated SOAP note generated from extracted entities  
+- **medical_summary.json** - Structured medical summary extracted from the transcript  
+- **sentiment_intent.json** - Patient sentiment and intent analysis  
+- **soap_note.json** - Automated SOAP note generated from extracted entities  
 
 All outputs are **fully grounded in the transcript** and contain **no inferred or hallucinated medical information**.
 
