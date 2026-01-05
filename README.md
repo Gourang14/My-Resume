@@ -224,7 +224,7 @@ notebook/demo.ipynb
 - Save outputs to the `outputs/` directory
 
 
-### 📄 Generated Outputs
+###  Generated Outputs
 
 After execution, the following files are created in the `outputs/` directory:
 
