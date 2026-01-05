@@ -232,5 +232,5 @@ After execution, the following files are created in the `outputs/` directory:
 - **sentiment_intent.json** - Patient sentiment and intent analysis  
 - **soap_note.json** - Automated SOAP note generated from extracted entities  
 
-All outputs are **fully grounded in the transcript** and contain **no inferred or hallucinated medical information**.
+All outputs are programmatically grounded in the provided transcript using the hybrid NER and negation-handling logic described above, with the explicit goal of preserving clinical accuracy and preventing medical hallucinations.
 
