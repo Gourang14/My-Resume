@@ -83,7 +83,6 @@ This strict separation ensures clinical readability and avoids unsafe inference.
 ---
 
 ## Project Structure
-```text
 Gourang_Agarwal_Emitrr_Assignment/
 ├── data/
 │   └── transcript.txt
@@ -104,7 +103,7 @@ Gourang_Agarwal_Emitrr_Assignment/
 ├── README.md
 └── requirements.txt
 ---
-```text
+
 ## Setup & Execution
 
 ### 1. Environment Setup
