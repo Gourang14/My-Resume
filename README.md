@@ -1,7 +1,7 @@
 # Physician Notetaker: Clinical NLP Pipeline
 
 ## Project Overview
-This project is an AI-driven medical documentation system designed to transform unstructured physician–patient conversations into structured, actionable clinical insights. Developed for the **Emitrr AI Engineer Intern assessment**, the pipeline performs **Medical Named Entity Recognition (NER)**, **Sentiment & Intent Analysis**, and **Automated SOAP Note Generation**, with a strong emphasis on **clinical safety, explainability, and zero-inference extraction**.
+This project is an AI-driven medical documentation system designed to transform unstructured physician–patient conversations into structured, actionable clinical insights. Developed for the **Emitrr AI Engineer Intern assessment**, the pipeline performs **Medical Named Entity Recognition (NER)**, **Sentiment & Intent Analysis** and **Automated SOAP Note Generation**, with a strong emphasis on **clinical safety, explainability and zero-inference extraction**.
 
 ---
 
@@ -66,7 +66,7 @@ This strict separation ensures clinical readability and avoids unsafe inference.
 **A:** I would start with **BioBERT**, add a classification head, and fine-tune it on labeled patient–doctor dialogue data using a low learning rate to preserve clinical language understanding.
 
 **Q: What datasets would you use for training a healthcare-specific sentiment model?**  
-**A:** Suitable datasets include **MIMIC-IV**, **MTSamples**, **MedDialog**, and **SMM4H**, which capture both formal clinical language and informal patient expressions.
+**A:** Suitable datasets include **MIMIC-IV**, **MTSamples**, **MedDialog** and **SMM4H**, which capture both formal clinical language and informal patient expressions.
 
 ---
 
